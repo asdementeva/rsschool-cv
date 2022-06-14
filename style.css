@@ -1,1 +1,482 @@
-стили
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Links*/
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+/*Common*/
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+p + p {
+    margin-top: 1em;
+}
+
+ul {
+    list-style: none;
+    display: inherit;
+    width: inherit;
+}
+
+img, svg {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="sumbit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    background: #FCCB4A;
+    width: 1600px;
+    margin: auto;
+
+}
+
+
+/* Grid */
+
+.container {
+    width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.header {
+    padding-top: 47.5px;
+    padding-bottom: 47.5px;
+    }
+    
+    .header-container {
+        width: 1280px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+        width: 1280px;
+        padding-left: 15px;
+        padding-right: 15px; 
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    /* .nav-item {
+        width: 1280px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    } 
+
+    .nav-item:last-child {
+        margin-right: 0px;
+    } */
+
+    .nav a {
+        transition: color 0.2s ease;
+    }
+    
+    .nav a:hover {
+        color: #FAFAFA;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 404px 1fr;
+        width: 1247px;
+        height: 1764px;
+    }
+
+    .sidebar {
+        background-color: #FAFAFA;
+        width: 404px;
+    }
+
+    .contacts-title {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    
+    .hr-sidebar {
+        /* Line 1 */
+        width: 307.63px;
+        height: 0px;
+
+        /* Dark grey */
+
+        border: 1.04751px solid #6D7081;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+   
+    .contacts {
+        padding-top: 63px;
+        padding-left: 50px;
+    }
+
+    .img {
+        margin: 0px;
+        padding-top: 65px;
+        padding-left: 127px;
+    }
+
+    .main {
+        padding-left: 177px;
+    }
+
+    .contacts-item {
+        padding-top: 17px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .contacts-link {
+        transition: color 0.2s ease
+    }
+
+    .contacts-link:hover {
+        color: #FCCB4A;
+    }
+
+    .skills {
+        padding-top: 67px;
+        padding-left: 50px;
+    }
+
+    .skills-title {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .skills-item {
+        padding-top: 17px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .languages {
+        padding-top: 67px;
+        padding-left: 50px;
+    }
+
+    .languages-title {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .languages-item {
+        padding-top: 17px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .img-sidebar {
+        border-radius: 150px;
+        
+    }
+
+    .basic {
+        background-color: white;
+    }
+
+    .main-header {
+        padding-top: 102px;
+        padding-left: 63px;
+    }
+
+    .main-header-title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .profession {
+        padding-top: 8px;
+        font-size: 38px;
+    }
+
+    .summary-title {
+        padding-top: 110px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .main-content {
+        padding-left: 63px;
+        padding-right: 50px;
+    }
+
+    .hr-basic {
+        /* Line 1 */
+
+
+        width: 729.06px;
+        height: 0px;
+
+        /* Dark grey */
+
+        border: 1.04751px solid #6D7081;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .summary-text {
+        padding-top: 34px;
+        font-size: 19px;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    pre {
+        width: 100%;
+        padding-left: 0;
+        white-space: normal;
+        display: flex;
+        justify-content: center;
+      }
+      
+      pre code {
+        white-space: pre-wrap;
+      }
+      
+      pre code {
+        background: black;
+        color: #FCCB4A;
+        padding: 0;
+      }
+
+      .code-title {
+        padding-top: 34px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .code-js {
+        padding-top: 34px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .education-title {
+        padding-top: 34px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .education-item {
+        padding-top: 34px;
+        font-size: 19px;
+        font-weight: 400;
+        list-style: square
+    }
+
+    .education-item li {
+        list-style: square;
+        margin-left: 25px;
+    }
+
+    .experience-title {
+        padding-top: 34px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    
+    .experience-item {
+        padding-top: 34px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+ 
+    .experience-link {
+        transition: color 0.2s ease
+    }
+
+    .experience-link:hover {
+        color: #FCCB4A;
+    }
+
+    html {
+        /* background-color: white; */
+        scroll-behavior: smooth;
+    }
+
+    .footer-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 47.5px;
+    padding-bottom: 47.5px;
+    }
+
+    .copyright {
+        padding-right: 150px;
+    }
+
+    .link-git {
+        padding-right: 50px;
+    }
+
+    .main-container {
+        box-shadow: 5px 5px 10px 10px black;
+    }
+
+
+/** {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+body {
+    position: relative;
+    width: 1600px;
+    height: 1989px;
+    
+    background: #FCCB4A;
+    
+    padding: 0;
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	color: black;
+	font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+main {
+    position: absolute;
+    width: 1246.53px;
+    height: 1764px;
+    left: 177px;
+    top: 115px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 76px 148px rgba(0, 0, 0, 0.15);
+
+	padding-top: 113px 
+    }
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    }
+
+  .nav-link {
+    padding: 0 10px;
+    line-height: 50px;
+ 
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    /*color: #664242;
+    transition: .3s;    
+    } 
+
+   /*.nav-link:visited {
+        text-decoration: none;
+        color: #664242; 
+    } 
+
+   .nav-link:active {
+        text-decoration: none;
+        color: #664242; 
+    }
+
+   .nav-link:hover {
+    text-decoration: underline; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    /*color: black; /* Цвет ссылки */
+   /*} 
+
+  #contacts {
+    cursor: copy;
+  }
+ */
