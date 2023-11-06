@@ -1,5 +1,7 @@
 
 ## Alexandra Dementeva
+![Photo](https://avatars.githubusercontent.com/u/102434370?v=4)
+
 
 ## Contact Information
 - Email: alexandra.topchiy@gmail.com
